@@ -20,12 +20,23 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+\documentclass[12pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+\usepackage{fancyhdr}
 
 \usepackage{helvet} % Default font is the helvetica postscript font
 %\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
 
 \newsectionwidth{0pt} % Stops section indenting
+\usepackage{multicol}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\lhead{}
+\chead{}
+\rhead{}
+\rfoot{\thepage}
+\lfoot{Jason Bane}
+\cfoot{jbane@jlab.org}
 
 \begin{document}
 
@@ -33,28 +44,20 @@
 %	YOUR NAME AND ADDRESS(ES) SECTION
 %----------------------------------------------------------------------------------------
 
-\name{Jason Bane\\ \\} % Your name at the top
+\name{Jason Bane\\ } % Your name at the top
 
 % If you don't want one of the addresses, simply remove all the text in the first or second \address{} bracket
 
 %\address{{\bf School Address} \\ Department of Study \\ University \\ City, State 12345 \\ (000) 111-1111} % Your address 1
 
-\address{{\bf Address} \\ 18 Morrison Ave. \\ Newport News, VA 23601 \\ (931) 239-0611  jbane@jlab.org} % Your address 2
+\address{ 18 Morrison Ave. Newport News, VA 23601 \\ (931) 239-0611 $\circ$ jbane@jlab.org} % Your address 2
 
 %----------------------------------------------------------------------------------------
 
 \begin{resume}
 
-%----------------------------------------------------------------------------------------
-%	OBJECTIVE SECTION
-%----------------------------------------------------------------------------------------
 
-\section{\centerline{OBJECTIVE}}
-
-\vspace{8pt} % Gap between title and text
-
-A position in the scientific community utilizing my skills in education, data analysis, and physics.\\ 
-
+\hrulefill
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
@@ -66,8 +69,13 @@ A position in the scientific community utilizing my skills in education, data an
 {\sl Ph.D}, 
 Nuclear Physics  \\ 
 University of Tennessee, Knoxville , TN \hfill Planned December 2019 \\ 
-Thesis - The EMC Effect in the $A = 3$ Mirror Nuclei \\
+Dissertation: "The EMC Effect in the $A = 3$ Mirror Nuclei" \\ 
+Advisor: Professor Nadia Fomin\\
 GPA 3.66 
+
+{\sl Secondary Education Certification}, Math and Science \\
+University of Tennessee, Knoxville , TN \hfill May 2010 \\
+GPA 4.0
  
 {\sl Bachelor of Science}, Physics, Minor in Education \\ 
 University of Tennessee, Knoxville , TN \hfill May 2009\\
@@ -75,8 +83,8 @@ GPA 3.10
 
 %----------------------------------------------------------------------------------------
  
-\vspace{0.2in} % Some whitespace between sections
-
+\vspace{0.1in} % Some whitespace between sections
+\hrulefill
 %----------------------------------------------------------------------------------------
 %	PROFESSIONAL EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
@@ -91,9 +99,11 @@ GPA 3.10
 Graduate Research Assistant \hfill May 2014 -- On going 
 \begin{itemize} \itemsep -2pt % Reduce space between items
 	\item Designed and constructed front end electrons for an electron spectrometer.
-	\item Maintained and refurbished individual detector components of an electron spectrometer.
+	\item Maintained and refurbished individual detector components of a spectrometer.
 	\item Calibrated detectors and used online analysis to control quality of data during an experiment. 
-	\item Preformed data analysis on a large set of data involving multiple nuclear targets. 
+	\item Performed analysis on a large set of data involving multiple nuclear targets. 
+	\item Instructed new researches on the use of hardware and software used in the field
+	
 \end{itemize}
 \vspace{-6pt} % Reduce space between positions at the same organization
 Graduate Teaching Assistance  \hfill August 2012 -- May 2015 
@@ -120,15 +130,16 @@ Graduate Teaching Assistance  \hfill August 2012 -- May 2015
 %	COMPUTER SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{\centerline{COMPUTER SKILLS}}
+\section{\centerline{TECHNICAL SKILLS}}
 
 \vspace{8pt} % Gap between title and text
-
-Experienced in c$++$,python, cern-ROOT , latex, and fortran.
+Program Languages: c$++$, python, cern-ROOT, latex, and fortran\\
+Software: Microsoft office, Libre Office, Texstudio, vim, atom\\
+OS: Linux(Red Hat), Windows, MacOS\\
 
 %----------------------------------------------------------------------------------------
 
-\vspace{0.2in} % Some whitespace between sections
+\vspace{0.1in} % Some whitespace between sections
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS SECTION
@@ -138,45 +149,78 @@ Experienced in c$++$,python, cern-ROOT , latex, and fortran.
 
 \vspace{15pt} % Gap between title and text
 \begin{itemize} \itemsep -2pt % Reduce space between items
+\item  H. Dai, [et al. including \textbf{J. Bane}], ``First Measurement of the Ar(e,$e^\prime$)X Cross Section at Jefferson Lab," Phys. Rev. C 99, 054608 May 2019
 \item R. Cruz-Torres, [et al. including \textbf{J. Bane}], ``Comparing proton momentum distributions in A=3 nuclei via $^3$He and $^3H$(e,$e^\prime$p) measurements," in preparation, (2019)
 \item S. N. Santiesteban, S. Alsalmi, D. Meekins, \textbf{J. Bane,} et al., ``Density Changes in Low Pressure Gas Targets for Electron Scattering Experiments" in preparation (2018) 
+
 \item  H. Dai, [et al. including \textbf{J. Bane}], ``First Measurement of the Ti(e,$e^\prime$)X Cross Section at Jefferson Lab," Phys. Rev. C 98, 014617 July 2018
-\item  H. Dai, [et al. including \textbf{J. Bane}], ``First Measurement of the Ar(e,$e^\prime$)X Cross Section at Jefferson Lab," in preparation, (2018)
 \item P V. Pandey, [et al. including \textbf{J. Bane}], ``Probing electron-argon scattering for liquid-argon based neutrino-oscillation program," preprint arXiv:1711.01671
 
 \end{itemize}
 
 
+\vspace{0.1in} % Some whitespace between sections
 %----------------------------------------------------------------------------------------
 %	HONORS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{\centerline{HONORS}} 
+\section{\centerline{Honors}} 
 
-\vspace{-5pt} % Reduce space between section title and contents
+%\vspace{-pt} % Reduce space between section title and contents
 
-\begin{center}
+
 Jefferson science associates graduate fellowship award (2018)  \\
 Chancellor’s honors for extraordinary professional promise (2016) \\
 DOE office of science graduate student research program award (2015)\\
 Dean's List 2009 Academic Year (2010)
-\end{center}
+
 %----------------------------------------------------------------------------------------
 
-\vspace{0.2in} % Some whitespace between sections
+\vspace{0.1in} % Some whitespace between sections
 
 %----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{\centerline{Research Activity }}
-Talk given at the 2nd Workshop on Quantitative Challenges in SRC and EMC Research at MIT, Boston   \hfill 2019
+\section{\centerline{Conference Presentations}}
+\begin{itemize}\itemsep -2pt
+\item "EMC in A=3 from MARATHON," 2nd Workshop on Quantitative Challenges in SRC and EMC Research,  MIT, Cambridge MA,  March 2019
+\item "Ratios in A=3 nuclei from MARATHON ," American Physical Society's Division of Nuclear Physics' yearly meeting, HA, October 2018
+\item "Measurement of the spectral function of Argon and Titanium through the(e,$e^\prime$p) reaction," American Physical Society's Division of Nuclear Physics' yearly meeting, HA, October 2018
+\item "Status of the MARATHON experiment." American Physical Society's Division of Nuclear Physics' yearly meeting, PA, October 2017
+\end{itemize}
+%----------------------------------------------------------------------------------------
 
+\vspace{0.1in} % Some whitespace between sections
+
+\section{\centerline{Poster Presentations}}
+	\begin{itemize}\itemsep -2pt
+		\item "The impetus in the EMC effect, a EMC simulation." Gordon Research Conferences, Holderness, NH. August 2018 
+		\item "Searching for the Origin of the EMC effect." SURA Board of Trustees Meeting, Newport News, VA. April 2018 
+	\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\centerline{REFERENCES}}
+
+\begin{multicols}{2}
+{\bf{Nadia Fomin}}, Professor\\
+Department of Physics and Astronomy\\ 
+University of Tennessee at Knoxville\\
+(865) 974-1509, fomin@vols.utk.edu\\
+\columnbreak
+
+{\bf{Douglas Higinbotham}}, Staff Scientist\\
+Jefferson Lab Accelerator Facility\\
+(757) 584-7851, doug@jlab.edu\\
+\end{multicols}
 
 
 %----------------------------------------------------------------------------------------
 
-\vspace{0.2in} % Some whitespace between sections
+\vspace{0.1in} % Some whitespace between sections
 
 %----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
@@ -187,7 +231,7 @@ Talk given at the 2nd Workshop on Quantitative Challenges in SRC and EMC Researc
 \vspace{-5pt} % Reduce space between section title and contents
 
 \begin{center}
-Classical piano, jazz, bodybuilding/aerobic exercise, cooking, dancing
+Football, coaching, programing, boating, traveling,
 \end{center} 
 
 %----------------------------------------------------------------------------------------
@@ -199,7 +243,7 @@ Classical piano, jazz, bodybuilding/aerobic exercise, cooking, dancing
 
 %----------------------------------------------------------------------------------------
 
-\vspace{0.2in} % Some whitespace between sections
+\vspace{0.1in} % Some whitespace between sections
 
 %----------------------------------------------------------------------------------------
 %	MEMBERSHIPS SECTION
@@ -211,13 +255,21 @@ Classical piano, jazz, bodybuilding/aerobic exercise, cooking, dancing
 
 \begin{center}
 	American Physics Society, Student Affiliate \\
-	Vice President of Activities, RPI Weight-training Club \\ 
-	Chairperson, Entertainment Committee, Utica College \\ 
-	Latin-American Student Union, Utica College \\
-	Member All-American Nautilus 
+ 
 \end{center}
 
 %----------------------------------------------------------------------------------------
 
-\vspace{0.2in} % Some whitespace between sections
+\vspace{0.1in} % Some whitespace between sections
 
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\centerline{OBJECTIVE}}
+
+\vspace{8pt} % Gap between title and text
+
+Obtain a position in the scientific community utilizing my skills in education, data analysis, and physics.\\ 
+\vspace{0.1in} % Some whitespace between sections
