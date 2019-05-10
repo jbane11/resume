@@ -1,0 +1,88 @@
+
+\documentclass[12pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{}
+\chead{}
+\rhead{}
+\rfoot{\thepage}
+\lfoot{Jason Bane}
+\cfoot{jbane@jlab.org}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Jason Bane}}
+
+18 Morrison Ave.\ \ \textbullet
+\ \ Newport News, VA 23601 \\
+(931) 239-0611\ \ \textbullet
+\ \ jbane@jlab.org
+\end{center}
+\hrule
+\subsection*{References}
+
+	{\bf{Nadia Fomin}}, Professor\\
+	Department of Physics and Astronomy\\ 
+	University of Tennessee at Knoxville\\
+	(865) 974-1509, fomin@vols.utk.edu\\
+	\\	
+	\parskip=0.1em
+	{\bf{Douglas Higinbotham}}, Staff Scientist\\
+	Jefferson Lab Accelerator Facility\\
+	(757) 584-7851, doug@jlab.edu\\
+	\\	
+\parskip=0.1em
+	{\bf{Mellisa White}}, Teacher, Principal\\
+	Clay Count Board of Education\\
+	millicentfiske@gmail.com\\
+		\\	
+	\parskip=0.1em
+	{\bf{Evan McClellan}}, Post-doctoral Fellow\\
+	Jefferson Lab Accelerator Facility\\
+	randallm@jlab.org\\
+
+
+
+\end{document}
