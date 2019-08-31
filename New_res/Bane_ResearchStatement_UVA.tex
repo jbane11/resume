@@ -1,0 +1,80 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[12pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{}
+\chead{}
+\rhead{}
+\rfoot{\thepage/ \pageref{LastPage}}
+\lfoot{Jason Bane}
+\cfoot{jbane@jlab.org}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+		{\setlength{\leftmargin}{#1}}%
+		\item[]%
+	}
+	{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+		{\setlength{\leftmargin}{-0.5#1}}%
+		\item[]%
+	}
+	{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+		#1 &
+		#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\vspace*{-1.2cm}
+{\textbf{Jason Bane}}\\
+18 Morrison Ave. \\
+Newport News, VA 23601 \\
+(931) 239-0611 \\
+jbane@jlab.org \\
+\today\\
+
+{ \centering \textbf{Statement of Research Interest} \par}
+
+%\paragraph{}I have been working as a research assistant at Jefferson Lab through the University of Tennessee in order to complete my Ph.D. in nuclear physics. My research brought me from Knoxville to Newport News to gain access to Jefferson Lab's electron accelerator. The idea of using an electron to probe inside of a nucleus intrigued me, because of the opportunity to gain a greater understanding of the building blocks of nature and their interactions. 
+\paragraph{}
+My research at JLab focused on two areas, preparing the BigBite spectrometer(BBS) and analyzing HRS data. In order to prepare the BBS, I refurbished the Cerenkov by replacing broken PMTs, realigning internal mirrors, and repairing leaks. By performing maintenance on the VDCs with conditioning the field and signal wires and flushing and replacing the gas, I return the VDCs to working order. I prepared the electronics of the BBS by laying power and signal cables. As part of the preparation, I design logical and efficient cable layouts for building triggers and data storage. My analysis of the HRS data started with building and maintaining the replay script and repository for replay and detector database. I calibrate the ADCs and TDCs from the HRS detectors to provide useful information from the detector signals. Then, I calculated the detector efficiencies and measured the PID efficiency of the calorimeters and Cerenkov. A clean sample of DIS electrons was counted by removing the background events with corrections for pions, positron contamination, and end cap contamination. Then I extracting the cross-section via the Monte-Carlo ratio method. Using the cross-section of Helium, Tritium, and deuterium, I calculated the EMC effect for both Helium and Tritium. 
+
+
+\paragraph{}
+My time at Jefferson Lab has taught many many aspects of the process of inclusive cross-section measurement from electron scattering. I want to take this knowledge and advance my understanding of not only inclusive electron scattering but also other scattering processes, like semi-inclusive or exclusive scattering process and parity-violating reactions. I want to use the tools that I have learned here to develop a more complete interpretation of the structure and interactions of the fundamental aspects of nature. I also want to use my skills with hardware to efficiently and logically develop new and improved tools to study the building blocks of nature. 
+\end{document}
+
+
+%The main focus of my current research is to study the internal structure of a nucleon using electron scattering. Specifically, this research is trying to study the EMC effect in both the Helium-3 and Tritium nuclei from data that was taken during the MARATHON(MeAsurement of $F_n^2/F_p^2$, d/u RAtios and A=3 EMC Effect in Deep Inelastic Electron Scattering off the Tritium and Helium MirrOr Nuclei) experiment. This research is trying to discover how the modification of the tritium nuclear structure function relative to the structure function of deuterium differs from the modification of the Helium nuclear structure function relative to the structure function of deuterium. The mirror nuclear structure of tritium and helium-3 will allow the extraction of the modification caused by the additional proton in helium-3 versus the extra neutron in tritium. 
+
+%My thesis work focused on measuring the deep inelastic cross-section of tritium, helium-3, and deuterium at an x-Bjorken(x) between 0.2 and 0.8. I calculated the cross-section of the gas targets by measuring the yield of scattered electrons with the high resolution spectrometer in Hall A.  

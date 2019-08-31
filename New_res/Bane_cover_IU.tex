@@ -1,0 +1,78 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{}
+\chead{}
+\rhead{}
+\rfoot{\thepage/ \pageref{LastPage}}
+\lfoot{Jason Bane}
+\cfoot{jbane@jlab.org}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+		{\setlength{\leftmargin}{#1}}%
+		\item[]%
+	}
+	{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+		{\setlength{\leftmargin}{-0.5#1}}%
+		\item[]%
+	}
+	{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+		#1 &
+		#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\vspace*{-1.2cm}
+{\textbf{Jason Bane}}\\
+18 Morrison Ave. \\
+Newport News, VA 23601 \\
+(931) 239-0611 \\
+jbane@jlab.org \\
+\today\\
+
+Dear Professor Rex Tayloe, 
+
+\paragraph{}Hello, My name is Jason Bane. I am a Ph.D. student at the University of Tennessee. I am in the process of writing my thesis and plan to defend late this fall. Completing my research at Jefferson Lab for the last 5 years has afforded me the opportunity to gain an immense amount of experience with electron scattering experiments. My time at the lab has been devoted to honing my skills and knowledge in experimental physics. Working with the MARATHON, APEX, and Argon($e^\prime$,p) experiments has allowed me to work on constructing spectrometers, refurbishing detectors, and building electron systems for data acquisition. These experience and my drive to learn more will make me a prime candidate to work on the COHERENT experiment at ORNL.
+\paragraph{}My work at Jefferson Lab has allowed me to work on many aspects of an experiment. I was able to work on the refurbishment and maintenance of the BigBite Spectrometer for the MARATHON experiment. Preparing this spectrometer gave me the opportunity to gain experience in the design and construction of the front end electronics including designing and testing of a logic trigger. I continued my work with BigBite by contributing to the refurbishing of individual detectors in the spectrometer and erecting the data acquisition system. I assisted in the preparation of analysis software for the three different experiments. During the Argon, MARATHON, and APEX experiments, I helped maintain the online analysis software and replay scripts. Using the analysis software and replayed data, I calibrated parts of the detectors, focusing on the beam position monitors and analog to digital converter signals from the cherenkov and calorimeters. As part of my Ph.D., I have been analyzing MARATHON data. Part of my analysis task has been to compare data results to simulated data. In order to simulate data, I have had to work closely with cross-section models and simulation packages. Completing this analysis has granted me the ability to learn different coding languages like \CPP, fortran, ROOT, and python.
+
+\paragraph{}The knowledge I have gained working at Jefferson Lab would make me a great fit for this postdoc working on the COHERENT experiment. My previous hands-on experience with the BigBite electron spectrometer would allow me to learn quickly to perform day to day operations on the argon detector. My experience with data analysis for three different experiments at Jefferson Lab has provided me with tools to analyze large sets of data. My familiarity with coding languages and simulation packages will help me to quickly understand and use new simulation tools.\\
+
+
+\noindent Thank you for your time and attention,\\
+\noindent Jason Bane
+
+
+
+
+\end{document}
+
