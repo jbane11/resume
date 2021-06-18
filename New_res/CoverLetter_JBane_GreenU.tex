@@ -1,0 +1,75 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+%\pagestyle{fancy}
+\fancyhf{}
+\lhead{}
+\chead{}
+\rhead{}
+\rfoot{\thepage/ \pageref{LastPage}}
+\lfoot{Jason Bane}
+\cfoot{jbane@jlab.org}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+		{\setlength{\leftmargin}{#1}}%
+		\item[]%
+	}
+	{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+		{\setlength{\leftmargin}{-0.5#1}}%
+		\item[]%
+	}
+	{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+		#1 &
+		#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\vspace*{-1.2cm}
+\noindent Jason Bane\\
+Newport News, VA \\
+\today\\
+
+Dear Hiring Manager,
+
+\paragraph{}I write to apply for the physics instructor position in the science division at Green River College. I successfully defended my dissertation "The EMC Effect in A=3 Nuclei" under the direction of Nadia Fomin, at the University of Tennessee. Before entering into graduate school, I taught high school physics and mathematics. My dissertation research brought me to Thomas Jefferson National Laboratory in Newport News, VA. My time at the lab has been devoted to honing my skills and knowledge in the complete process of being an experimental physicist. I experienced constructing spectrometers, refurbishing detectors, building electrical systems for data acquisition, analyzing large data sets, and collaborating with a diverse community while working with three electron scattering experimental groups.
+\paragraph{}My research at Jefferson Lab and my time as an educator at the secondary and collegiate level has allowed me to develop my skills as a teacher and mentor. Collaborating with a diverse group of scientists to construct, maintain, and operate spectrometers has allowed me to gain a better understanding on how to adapt my skills as a mentor and being a leader to a diverse body of people. Before joining a research group, I worked as a graduate teaching assistant instructing astronomy labs and introductory physics labs. As the head astronomy lab instructor, I designed lessons that used the planetarium, interactive computer programs, and night time viewing with telescope to facilitate the learning of basic astronomy topics for undergraduate students focusing in variety of majors. In the introductory physics labs, I facilitated an environment for open ended exploration of physics concepts in order for students to gain a greater understanding of the scientific process and physics concepts. I also provided small group and personal interactive tutoring for test preparation and homework for all levels of undergraduate physics and math. My time as an educator at the secondary level focused on teaching physics, geometry, and  college preparatory math. Teaching these three different courses required me to be willing to adopt innovative teaching methods to promote learning for all of my students. I designed lessons that focused on problem solving skills and discussion to facility a student centered learning environment. I also implemented other teaching techniques appropriate for the concept being taught for example, hands on labs, demonstrations, computer based labs, and student presentations. My lesson designs use constant assessment through observation and direct questions, while also using self assessment to drive critical thinking. I strive to share my passion of education with my students to help them embrace all of opportunities to gain knowledge. In order to provide the best learning environment, I drive to be compassionate and show respect in all of my interactions inside and out of the classroom in the hope that I might help others embraces diversity and inclusion. 
+
+\paragraph{}The knowledge and skills I have gained while working as a researcher and educator has made me a good candidate for this instructor position at Green River College. My experiences in the classroom and the laboratory will allow me to provided adaptable lessons that will fit the requirements of all students. 
+\\
+
+\noindent Thank you for your time and attention,\\
+\noindent Jason Bane
+
+
+
+
+\end{document}
+

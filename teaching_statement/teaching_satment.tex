@@ -1,0 +1,66 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{}
+\chead{}
+\rhead{}
+\rfoot{\thepage/ \pageref{LastPage}}
+\lfoot{Jason Bane}
+\cfoot{jbane@jlab.org}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+		{\setlength{\leftmargin}{#1}}%
+		\item[]%
+	}
+	{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+		{\setlength{\leftmargin}{-0.5#1}}%
+		\item[]%
+	}
+	{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+		#1 &
+		#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+\begin{center}	{\huge  Statement of Teaching Philosophy}\\
+{\large Jason Bane}
+\end{center}
+\hrule
+
+
+\paragraph{}Educating students at the secondary and undergraduate level has helped develop my teaching skills. I have been able to experience the needs and requirements of educating a diverse group of students. I believe that promoting logic based problem solving skills and discussion provides a great environment for educational development. I initiate lessons with a focus on logic based problem solving; then, I mix in practice and experiences that focus on discussion. Using these two strategies together promotes the fundamentals while developing skills for application. 
+\paragraph{}I use logic based problem solving in the classroom by focusing the assessments on the "why". Requiring the students to explain why forces them to critically think about the logic behind their choices. I break longer problems into multiple steps to allow the students to focus on the logic of one step at a time and to prevent them from becoming overwhelmed with the entire solution. The ability to determine the logic behind a step is a universal skill that can be developed and improved no matter the concept. Continuous assessment is done throughout the lesson to force the students to consciously think about the logic behind each step in the solution of a problem. At the collegiate level I increase the complexity of the assessments to focus on why and why not. The additional why not question develops students ability to evaluate their own progress. The end goal  is for the student to be able to apply the logical steps to every problem tasked and be able to apply these problem solving skills to real world situations. 
+\paragraph{}Throughout a lesson I promote the use of discussion during practice. I believe the use of discussion helps provide an equitable and inclusive atmosphere for diverse students. I used small group white board presentations as a way to stimulate the discussion of a certain concept or logical step. These small groups allow for diverse students to share their logic and to help students gain other perspectives on a particular solution. For these small groups to work efficiently, I make the groups in a way that allow the students to interact with classmates of different backgrounds (race, ethnicity, gender, intelligence, social economic status, etc.).  I also use student lead problem solving to encourage the open discussion of conceptual understanding. This student lead problem solving can be completed by either allowing a student to solve problems at the board or having the entire classroom step by step solve a problem while discussing their solution. Allowing students to explain their answer helps develop their conceptual understanding and use of logic. 
+	
+\paragraph{} This combination of strategies ensures the development of skills and conceptual understanding that promote learning. Using discussion in an education setting allows for students to take responsibility for their own understanding. The focus on logical problem solving skills develops critical thinking ability that is applicable outside of the classroom. 
+
+\end{document}

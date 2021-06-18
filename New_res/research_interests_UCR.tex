@@ -1,0 +1,190 @@
+
+\documentclass[12pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{}
+\chead{}
+\rhead{}
+\rfoot{\thepage/ \pageref{LastPage}}
+\lfoot{Jason Bane}
+\cfoot{jbane@jlab.org}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+{\textbf{Jason Bane}}\\
+18 Morrison Ave. \\
+Newport News, VA 23601 \\
+(931) 239-0611 \\
+jbane@jlab.org \\
+\today\\
+
+
+\subsection*{\centerline{Research Statement}}
+
+\paragraph{}
+I completed my Ph.D. research at Thomas Jefferson Notional Laboratory(JLab) through the University of Tennessee advised by Nadia Fomin. My research brought me from Knoxville to Newport News to gain access to Jefferson Lab's electron accelerator. I used an electron to probe inside of a nucleus to gain a greater understanding of the building blocks of nature and their internal interactions. The results of my research produced the first ever extraction of the inclusive deep inelastic cross section of tritium and the first ever measurement of EMC effect for tritium using extracted cross sections. My research experiences can be broken down into three areas, hands on hardware experience, physics data analysis, and running an experiment. I have interest in continuing to be active in all three areas. 
+\vspace{-1em}
+\subsection*{Hardware}
+\paragraph{}My career at JLab started off by working on the BigBite electron spectrometer. This spectrometer is a large acceptance spectrometer with a solid angle of 96 mrads and a momentum acceptance of greater than 500 $\frac{MeV}{c}$. My work on the this spectrometer consisted of constructing the data acquisition system, PMT performance studies, design and construction of coincidence trigger, and installation of consistent and dependable high voltage power for the detector systems.
+\vspace{-1em}
+\paragraph{DAQ and Trigger}
+\begin{itemize}
+	 \setlength\itemsep{0.0025em}
+	\item Designed and constructed front end electronics
+	\item Tested and repaired electronic modules like amplifiers and splitters
+	\item  Built coincidence trigger between scintillators and Cherenkov
+	\vspace{-0.5em}
+	\begin{itemize}
+			 \setlength\itemsep{0.00025em}
+		\item used oscilloscope and signal generator to ensure correct timing for trigger signals. 
+	\end{itemize}
+\end{itemize} 
+\vspace{-1em}
+\paragraph{ PMT performance studies}
+ Reusing BigBite required that I test the PMTs of the Cherenkov. Using a light-tight box and light source driven by a signal generator, I measured the quality of the PMTs. I took effort to replace or repair all PMTs that did not meet a standard signal to background ratio. 
+ \vspace{-1em}
+ \paragraph{High Voltage}
+ \begin{itemize}
+    \setlength\itemsep{0.0025em}
+ 	\item Tested install High Voltage Cards
+ 	\item Installed HV cabling ensuring adequate support to prevent wire and card damage
+ \end{itemize}
+
+My time spent in the lab setting, preparing the spectrometer, was an area of research I enjoyed. I feel like the best way to begin data analysis is by studying the behavior of the detectors and their signals. By beginning my research with refurbishing a spectrometer, I was more prepared to complete analysis because I had a better understanding of the signals that were received. I wish to grow my experiences in hands on detector work to continue growing my understanding of the signals we analyze. This would include working on new detector designs and reusing old setups. 
+
+\subsection*{Data Analysis}
+\paragraph{}My research goals as part of the MARATHON (MeAsurement of $F_n^2/F_p^2$, d/u RAtios and A=3 EMC Effect in Deep Inelastic Electron Scattering off the Tritium and Helium MirrOr Nuclei) experiment were to determine the EMC effect for the helium-3 and tritium via ratios from extractions of the DIS( deep inelastic scattering) cross section of helium-3, tritium, and deuterium. I developed scripts to measure the yield, efficiencies, background contamination, and luminosity to extract the DIS cross sections. I build these scripts using FORTRAN, C++, python, and SQL databases. I also used Monte Carlo simulations and cross section models to complete comparisons between simulation and data for an absolute measurement of the inclusive cross section. 
+ \vspace{-2em}
+\paragraph{}My interest in continuing work in data analysis spawn from a drive to learn more. I would like to developed my skills in new analysis techniques, examples: machine learning and GEANT simulations. Also, I would like to develop my skills of software development, for instant developing online analysis GUIs for efficient and streamline analysis of detector responses. 
+ \vspace{-1em}
+\subsection*{Running an Experiment}
+\paragraph{}Being experimental physicist is culminated by successfully completing an experiment. As part of a collaborator at JLab, I have been able to collaborate on completing five different experiments. I contributed to preparing the data acquisition and decoding for all five of these experiments. I spend time has run coordinator (RC) for many of these experiments. As an RC, I served as the first line of communication between the shift works, principal investigators, technicians, and accelerator staff. I focused on ensuring efficient use of beam time to acquire high quality data while collaborating with other experiment halls and lab technicians to complete the over arching goals of the lab. As an experienced hall A collaborator, I spent time mentoring new students on the hall A equipment and software tools helping them prepare and run their experiments.
+\vspace{-1em}
+\paragraph{} The feeling received from the rush of adrenalin due to the anticipation for the first beam on target can only be matched by a few things. One of which, is the relief felt when stopping the last beam and wrapping up an experiment. These two events and the chance of discovery during an experiment push me to be more involved in running experiments.
+\vspace{-1em}
+\section*{Future Goals}
+%\vspace{-1em}
+\paragraph{}My future goals as stated previously are to continue to develop as an experimental physicist. This requires that I continue to collaborator with our peers, complete projects as the project lead and join projects as a follower. This also means I work with fellow scientist to propose new project ideas and take time to propose my own. I would like to continue my research in nuclear structure and the EMC effect by participating in Hall C's E12-100-008 "Detailed Studies of the nuclear dependence of F2", and the CLASS collaboration's experiment E12-14-001 "The EMC effect in spin structure functions". I can also continue this research through EIC physics using the polarized electron beam and high energy ions to reach a new frontier in nuclear structure understanding. 
+
+
+
+
+
+
+
+\iffalse
+\paragraph{}The main focus of my current research was to study the internal structure of a nucleon using electron scattering. Specifically, this research is trying to study the EMC effect in both the Helium-3 and Tritium nuclei from data that was taken during the MARATHON(MeAsurement of $F_n^2/F_p^2$, d/u RAtios and A=3 EMC Effect in Deep Inelastic Electron Scattering off the Tritium and Helium MirrOr Nuclei) experiment. This research is trying to discover how the modification of the tritium nuclear structure function relative to the structure function of deuterium differs from the modification of the Helium nuclear structure function relative to the structure function of deuterium. The mirror nuclear structure of tritium and helium-3 will allow the extraction of the modification caused by the additional proton in helium-3 versus the additional neutron in tritium. 
+\paragraph{} In order to study the EMC effect in tritium and helium-3, the deep inelastic cross section has to be measured for both of the mirror nuclei and deuterium. My thesis work covered measuring the deep inelastic cross section of tritium, helium-3, and deuterium at an x-Bjorken(x) between 0.2 and 0.8. The cross section can be measured experimentally by counting the number of scattered electrons versus the number of scattering changes. This can be constrained to a double differential equation when using a limited phase space detector, and can be written as:
+\begin{center}
+$ \frac{d\sigma}{d\Omega dE^\prime} = \frac{Ne - BG }{Luminosity *  \epsilon * Acc(E^\prime ,\theta) * \Delta\Omega,\Delta E^\prime)} . $
+ \end{center}
+\paragraph{}During this experiment, I used Hall A's high resolution spectrometers to count scattered electrons($N_e$). Our spectrometer cannot determine the exact origination and type of scattering interaction of the electron, so I must subtract background events($BG$). The spectrometers are designed to detect leptons or hadrons scattering from the target chamber, but they are not absolutely efficient. In order to correct for the inefficiency, I apply an efficiency correction ($\epsilon$). The acceptance of the spectrometers is not uniform over the entire phase space. An acceptance function $Acc(E^\prime ,\theta)$ corrects for lost events is applied. The high resolution spectrometers can only accept scattering events in a small phase space in angle and scattered momentum $ (\Delta\Omega,\Delta E^\prime)$. 
+\paragraph{}Instead of calculating the acceptance function and phase space of the spectrometers, I used a monte carlo simulation to compare with data to calculate the cross section. If you generate the events in the same phase space with the same acceptance, the yield of data can be associated with the yield from data with:
+\begin{center}
+$ Yield_{data} = \textit{L} *\sigma^{data} * \left( \epsilon*\Delta E^\prime \Delta \Omega\right)*  A \left(E^\prime \theta \right)$\\
+$ Yield_{MC} = \textit{L} *\sigma^{mod} * \left( \Delta E^\prime \Delta \Omega\right)*  A \left(E^\prime \theta \right)$\\
+
+$ \frac{d\sigma}{d\Omega dE^\prime} = \sigma^{mod} * \left[\frac{Yield_{data} \left( 
+	E^\prime,\theta\right)} {Yield_{MC}\left(E^\prime,\theta\right)}\right] $
+\end{center}
+\paragraph{}
+The analysis process of extracting the cross section has focused on the calculation of the correction and weighting factors for the measurement of the cross section. The efficiency correction is a combination of inefficiencies from the detectors such as dead time and trigger efficiency, and software efficiencies as tracking and particle identification. The spectrometer's overall efficiency differs with kinematic, mainly due to electron and pion rate. The luminosity of a kinematic is calculated with the total charge accumulated over that kinematic and the density of the chosen nuclear target. Due to heating of the target gas from the indecent electron beam, the density of the target gas can change. This density change has been calculated for each of the gaseous targets, and the effect can be as large as 10$\%$. 
+\paragraph{}Currently, I am in the process of finalizing the systematic studies of the corrections for background events and monte carlo comparison. The background events for the MARATHON experiment are dominated by two different originators, pair produced electron-positron pairs and electrons that scatter off of the aluminum end caps. High energy photons decay into an e$^+$e$^-$ pairs. The electrons from these pairs can be scattered into our spectrometers, but cannot be distinguished via our detectors. A correction for these background events is calculated by measuring the number of positrons seen at the same kinematics. The background events that scatter from the aluminum end caps are cut out via an acceptance cut in the reaction vertex along the beam line. After studying yields from the empty cell, there is a non negligible amount of events that scatter from the end caps that tail off into accepted region of the reaction vertex. These background events are corrected by extracting the yield of events from the empty cell and  normalizing that to the events from the end caps of the gas cells. 
+\paragraph{}The next step in my analysis process of calculating the cross section for my three gaseous targets is to understand the systematic uncertainty in the comparison of monte carlo to data. I will begin to look at how adjusting small features of the event generation like offsets, optics matrix, generation phase space, and magnet apertures will effect the comparison of data to monte carlo. Then I will use these small changes in comparison to accurately describe the uncertainty of the monte carlo to data ratio.  
+\subsection*{Future Research}
+\paragraph{}My time at Jefferson Lab has taught many many aspects of the process of inclusive cross section measurement from electron scattering. I want to take this knowledge and advance my own understanding of not only inclusive electron scattering but also other scattering processes. I want to use the tools that I have learned here to develop a more complete interpretation of the structure and interactions of the fundamental aspects of nature. I thinking joining the Center for Neutrino Physics at Virginia Tech to develop and test nuclear models for neutrino interactions would be a great first step in achieving a greater understanding of the structure and interactions of the fundamental aspects of nature. 
+
+
+
+\newpage
+-
+\newpage
+{\textbf{Jason Bane}}\\
+18 Morrison Ave. \\
+Newport News, VA 23601 \\
+(931) 239-0611 \\
+jbane@jlab.org \\
+\today\\
+
+\subsection*{\centerline{Hardware Experiences}}
+
+\paragraph{} My work at Jefferson Lab since 2014 has allowed me to gain hardware experiences in three different areas. In 2014, I worked on refurbishing and setting up the Big Bite large acceptance electron spectrometer. During the spring and summer 2017, I was able to work with the Hall A beamline detectors. Then in the fall of 2017, I had experience working with the two hall A high resolution spectrometers.
+\subsection*{Big Bite}
+\paragraph{}The original proposal for the MARATHON experiment was to use the Big Bite electron spectrometer to increase the rate of electron counting to achieve better statics at low rate kinematics. In order to use Big Bite, the spectrometer needed to be reassembled, reconnected with power and signal cables, and tested. The spectrometer consisted of a gas cherenkov with 20 photomultiplier tubes(PMT), two wire chambers, a plane of scintillators with 13 bars, and two lead glass calorimeters with 143 blocks. The hardware experience I received during my work with the Big Bite spectrometer can be divided into refurbishing the gas cherenkov, performing maintenance on the wire chambers, reconnecting power and signal cables, and testing electronic modules.
+\begin{itemize*}
+	\item Refurbishing the gas cherenkov
+	\begin{itemize*}
+		\item Testing and replacing malfunctioning PMTs
+		\item Leak checking the chamber
+		\item Aligning and cleaning mirror panels.
+	\end{itemize*}
+	\item Maintaining the wire chambers
+	\begin{itemize*}
+		\item Test and adjust signal electronic cards
+		\item Clean and test wires with increasing voltages. 
+	\end{itemize*}
+	\item Connecting power and signal cables
+	\begin{itemize*}
+		\item Measuring the length of long cables with an oscilloscope, testing, and labeling signal and high voltage cables
+		\item Repairing broken cables and creating new ribbon cables. 
+		\item Design cable layout for trigger and data acquisition.
+		\item Design high voltage cable layout including mapping high voltage crate.
+	\end{itemize*}
+	\item Testing electronics
+	\begin{itemize*}
+		\item Testing high voltage power supply cards
+		\item Testing level translators for the wire chambers
+		\item Testing ADC and TDC cards in a fastbus crate with singles from a pulser and cosmic signals. 
+	\end{itemize*}
+\end{itemize*}
+
+ \subsection*{Hall A Beam Line}
+\paragraph{} During the spring run period of 2017, the Argon experiment saw some weird unexpected signals from the beam position monitors(BPM) on the hall a beam line. I was charged with investigating this issue to prepare for the MARATHON experiment. My examination of the signal issue required me to search through the signal pathway of the BPM, from the BPMs to the ADC channels. I was required to test signals from the BPM throughout their journey. This included testing RF modules, amplifiers, digital to analog converters, multiplexers, and demultiplexers. My investigation discovered a faulty fan was causing the demultiplexer to fail. After replacing the fan, tests were completed to ensure the signal quality of the BPMs. 
+  
+\subsection*{Hall A High Resolution Spectrometers(HRS)}
+\paragraph{}The Tritium group of experiments were slated to begin late fall of 2017. In order to prepare for this group of experiments, I performed maintenance on the hall A HRSs. The preparation for the upcoming experiments consists of many routine task. Some of those include testing and replacing fault cables, adjusting and testing the timing for the scintillators, testing ADC and TDC channels and the signals associated with those channels, installing new type of ADCs, building the trigger logic, and correcting the timing of the triggering signals. 
+
+\fi
+
+
+\end{document}

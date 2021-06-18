@@ -1,0 +1,80 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+%\pagestyle{fancy}
+\fancyhf{}
+\lhead{}
+\chead{}
+\rhead{}
+\rfoot{\thepage/ \pageref{LastPage}}
+\lfoot{Jason Bane}
+\cfoot{jbane@jlab.org}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+		{\setlength{\leftmargin}{#1}}%
+		\item[]%
+	}
+	{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+		{\setlength{\leftmargin}{-0.5#1}}%
+		\item[]%
+	}
+	{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+		#1 &
+		#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\vspace*{-1.2cm}
+\noindent Jason Bane\\
+Newport News, VA 23601 \\
+jbane@jlab.org \\
+
+\noindent\today\\
+
+\noindent 
+
+Dear IDA Hiring Manager,
+
+\paragraph{}I write to apply for the research analyst position working on space systems for IDA. I successfully defended my dissertation "The EMC Effect in A=3 Nuclei" under the direction of Nadia Fomin, at the University of Tennessee for a PhD. in nuclear physics. My dissertation research brought me to Thomas Jefferson National Laboratory in Newport News, VA. My time at the lab has been devoted to honing my skills and knowledge in the complete process of being an experimental physicist. I experienced constructing spectrometers, refurbishing detectors, building electrical systems for data acquisition, analyzing large data sets, and collaborating with a diverse community while working with three electron scattering experimental groups.
+
+\paragraph{}My research at Jefferson Lab has allowed me to work on many aspects of an experiment. I collaborated with a diverse group of scientists to construct, maintain, and operate three electron spectrometers to extract the electron-nucleus inclusive cross section. A large portion of my research has consisted of extracting the experimental measured cross section from electron scattering data. Using this data, I measured the performance of the individual detectors by organizing the data and identifying the source of any outlying signals. I have had to remove background events using fits and comparisons. I used Monte Carlo simulations to study the acceptance probability of the spectrometer. These experiences in data analysis have allowed me to learn many coding techniques and languages like Python, \CPP, FORTRAN, ROOT, and Java. All of these analysis tasks have required me to think critical about the task at hand, and I have had to adapt my problem solving skills to deal with solving algorithms, studying uncertainties, and debugging my code and the code of others. 
+
+\paragraph{}The knowledge and skills I have gained working at Jefferson Lab would make me a great fit to work as a Python software engineer. My mixture of problem solving and software skills will allow me to quickly step into the roles needed. One reason why I am applying for this position is because I wholeheartedly believe that is part of my job to help those around me. When discovering new tools, or aspects of a software, I always share it with my colleagues in order to ensure they have the best tools at had. 
+\\
+
+\noindent Thank you for your time and attention,\\
+\noindent Jason Bane
+
+
+
+
+\end{document}
+

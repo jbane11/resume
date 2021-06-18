@@ -1,0 +1,80 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{}
+\chead{}
+\rhead{}
+\rfoot{\thepage/ \pageref{LastPage}}
+\lfoot{Jason Bane}
+\cfoot{jbane@jlab.org}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+		{\setlength{\leftmargin}{#1}}%
+		\item[]%
+	}
+	{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+		{\setlength{\leftmargin}{-0.5#1}}%
+		\item[]%
+	}
+	{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+		#1 &
+		#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\vspace*{-1.2cm}
+\noindent\textbf{Jason Bane}\\
+18 Morrison Ave. \\
+Newport News, VA 23601 \\
+(931) 239-0611 \\
+jbane@jlab.org \\
+\today\\
+
+Dear Dr. Greg Kalicy,
+ 
+
+\paragraph{}I write to apply for the postdoctoral research associate position in the field of experimental nuclear and detector physics through the Catholic University of America working at Thomas Jefferson Lab. I successfully defended my dissertation "The EMC Effect in A=3 Nuclei" under the direction of Nadia Fomin, at the University of Tennessee. My dissertation research brought me to Thomas Jefferson National Laboratory in Newport News, VA. My time at the lab has been devoted to honing my skills and knowledge in the complete process of being an experimental physicist. I experienced constructing spectrometers, refurbishing detectors, building electrical systems for data acquisition, analyzing large data sets, and collaborating with a diverse community while working with three electron scattering experimental groups.
+\paragraph{}My time at Jefferson Lab has allowed me to work on many aspects of an experiment. I was able to work on the refurbishment and maintenance of a large acceptance electron spectrometer for a tritium experiment. Preparing this spectrometer gave me the opportunity to gain experience in the design and construction of the front end electronics. I refurbished individual detectors, by testing and replacing photomultiplier tubes and scintillating plastics. I assembled and tested the data acquisition system.
+I also prepared part of the analysis software and completed analysis for three different experiments by helping maintain the online analysis software and data decoding scripts. I calibrated parts of the detectors, focusing on the beam position monitors and analog to digital converter signals from the Cherenkov and calorimeters. As part of my Ph.D., I have analyzed electron scattering data to extract complete cross sections. I have worked closely with cross-section models and Monte Carlo simulation packages. Completing this analysis has granted me the ability to learn different coding languages like \CPP, Fortran, ROOT, and python. Being a senior student at the lab has allow me to take on roles as a mentor and guide for many of the new students, instructing them on the use of the detectors and analysis software.
+
+\paragraph{}The knowledge and skills I have gained working at Jefferson Lab would make me a great fit to join your group working with the GlueX experiment in Hall D and completing R\&D for a DIRC detector. My mixture of hardware, software and teaching experiences will allow me to quickly step into the roles needed, including being mentor to students, working with the detector R\&D, and analyzing the data. My passion for learning makes this position a great opportunity for me to continue to develop my knowledge in nuclear physics.      
+\\
+
+\noindent Thank you for your time and attention,\\
+\noindent Jason Bane
+
+
+
+
+\end{document}
+

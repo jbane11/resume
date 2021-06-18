@@ -1,0 +1,81 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{}
+\chead{}
+\rhead{}
+\rfoot{\thepage/ \pageref{LastPage}}
+\lfoot{Jason Bane}
+\cfoot{jbane@jlab.org}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+		{\setlength{\leftmargin}{#1}}%
+		\item[]%
+	}
+	{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+		{\setlength{\leftmargin}{-0.5#1}}%
+		\item[]%
+	}
+	{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+		#1 &
+		#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+\begin{center}	
+	{\huge  Research Statement}\\
+	{\large Jason Bane}
+\end{center}
+\hrule
+\paragraph{}My recent research at Thomas Jefferson National Accelerator Facility (JLab) has centered around studying the fundamental building blocks of matter. I used an electron beam to probe inside the protons and neutrons that make up Helium and Hydrogen isotopes. In this research statement, I will briefly discuss some of my experiences, my future research goals, and how my students could be involved. \\
+
+\noindent\textbf{My Experiences}\\
+\indent My research at JLab can be broken down into three areas: hands on detector work, experimental run period, and data analysis. My hands on experience involves working on an electron spectrometer in the following ways:
+\begin{itemize*}
+\item Tested PMTs for a gas Cerenkov, scintillators, and calorimeters. I lead in replacing or repairing any faulty Cerenkov PMTs.
+\item Tested, repaired, and installed electronic modules like splitters, amplifiers, fan in fan outs, and logic gates. 
+\item Tested and repaired ADC and TDC boards and prepared the detector signals to be input into the ADCs or TDCs. 
+\item  Tested and installed level translators for the VDCs and installed discriminators for signals traveling to the TDCs.
+\end{itemize*}
+
+\indent During the experimental run period I ensured the recording of high quality data. This required me to monitor the detector responses during production running, and maintain data decoding scripts. I also calibrated the detectors to help maintain data quality. I focused on calibrating the ADC signals from the Cerenkov and calorimeters. For safety concerns due to using a tritium target, I also had to complete beam position monitor calibration. This process required performing an intrusive measurement through collaboration with lab staff. I also took on the role of run coordinator for some time. This required me to organize productive and efficient use of beam time through communication between lab staff, technicians, and experimental shift workers.\\
+
+\indent My research goal for my thesis experiment was to extract full inclusive cross sections for three different gas targets. This required me to complete a large range of analysis tasks. I compared data and Monte Carlo simulation results to account for acceptance effects. I completed an in-depth study of the efficiency for all of the detectors and the selection cuts used, while also evaluating the number of background events and calculating correction factors. As part of this cross section analysis, I also examined the uncertainties for all of my correction and efficiency calculations, along with extracting the model dependent uncertainties. This wide range of analysis task provided me the opportunity to learn c++, ROOT, Fortran, and Python.\\
+
+\noindent\textbf{Research Plans}\\
+\indent I strive to learn, and that is the basis of my future research goals. My current research on the EMC effect helped solve a few pieces of an unsolved puzzle. There continues to be growth of interest in the understanding of the medium of a nucleon. I plan to use that interest to continue to collaborate with scientists at JLab on two upcoming experiments that will study the EMC effect. My desire to learn does not stop there. I also wold like to collaborate with scientists at Oak Ridge National Laboratory studying the neutron lifetime, neutrinoless double beta decay, and coherent elastic scattering.\\
+
+\noindent\textbf{Student Involvement}\\
+\indent My time as a research assistant at the University of Tennessee has allowed me to build connections at both Oak Ridge National Laboratory and JLab.  Both of these science facilities offer research programs to undergraduate students. These students can collaborate with scientists, engineers and graduate students to work on projects that will contribute to the lab's science program. These projects can focus on detector work with the experimentalist, accelerator work with engineers, or data analysis with theoreticians. I collaborated with undergraduates while completing some of my detector projects. Many of the undergraduate programs end in a poster session where the students get to share their work with the lab community and develop connections for future opportunities.
+
+
+\end{document}

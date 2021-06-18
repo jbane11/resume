@@ -1,0 +1,79 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{}
+\chead{}
+\rhead{}
+\rfoot{\thepage/ \pageref{LastPage}}
+\lfoot{Jason Bane}
+\cfoot{jbane@jlab.org}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+		{\setlength{\leftmargin}{#1}}%
+		\item[]%
+	}
+	{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+		{\setlength{\leftmargin}{-0.5#1}}%
+		\item[]%
+	}
+	{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+		#1 &
+		#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\vspace*{-1.2cm}
+{\textbf{Jason Bane}}\\
+18 Morrison Ave. \\
+Newport News, VA 23601 \\
+(931) 239-0611 \\
+jbane@jlab.org \\
+\today\\
+
+Hello, 
+
+\paragraph{}I am a Ph.D. student at the University of Tennessee and have just recently defended by dissertation research. I have been completing research at the Thomas Jefferson National Accelerator Facility (Jefferson Lab) in Newport News, VA. Completing my research here at the Lab for the last 5 years has allowed me to gain an immense amount of experience with detector systems, data acquisition systems, and data analysis. My time at the lab has been devoted to honing my skills and knowledge in the complete process of being an experimental physicist. Working with the three electron scattering experiments has allowed me to experience constructing spectrometers, refurbishing detectors, building electrical systems for data acquisition, and data analysis including Monte Carlo simulations and the processing of large data sets.  
+\paragraph{}My work at Jefferson Lab has allowed me to work on many aspects of an experiment. I was able to work on the refurbishment and maintenance of a large acceptance electron spectrometer. Preparing this spectrometer gave me the opportunity to gain experience in the design and construction of the front end electronics. This included designing and testing of a logic trigger built with analog and digital electronics. I refurbished individual detectors, by testing and replacing photomultiplier tubes and scintillating plastics.  
+I also prepared parts of the analysis software and completed analysis for three different experiments by helping maintain the online analysis software and data decoding scripts. I calibrated parts of the detectors, focusing on the beam position monitors and analog to digital converter signals from the Cherenkov and calorimeters. As part of my Ph.D., I have been analyzing electron scattering data. Part of my analysis task has been to compare data results to simulated data. In order to simulate data, I have had to work closely with cross-section models and monte carlo simulation packages. Completing this analysis has granted me the ability to learn different coding languages like \CPP, Fortran, ROOT, and python and working with SQL databases   
+
+\paragraph{}The knowledge and skills I have gained working at Jefferson Lab would make me a great fit to work as a Proton System Commissioning Physicist. My experience with radiation detection systems and data analysis would allow me to deploy and support the operation of the SC360, including analyzing data to improve, maintain, and troubleshoot problems that may arise. 
+\\
+
+\noindent Thank you for your time and attention,\\
+\noindent Jason Bane
+
+
+
+
+\end{document}
+

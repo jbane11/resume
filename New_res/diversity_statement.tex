@@ -1,0 +1,60 @@
+
+\documentclass[12pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{}
+\chead{}
+\rhead{}
+\rfoot{\thepage}
+\lfoot{Jason Bane}
+\cfoot{jbane@jlab.org}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+\noindent{\textbf{Diversity statement}}\\
+
+\paragraph{}I believe that providing an equitable and inclusive atmosphere is one of the most important goals of an educator. I attempt to complete this goal by always showing compassion, encouraging inclusion, and growing my understanding. As an educator at the secondary level, I was able to experience teaching in diverse settings. My students most predominantly showed diversity in race, gender, and social-economic status. By showing compassion and respect through out all of my interactions with students, I hope to guide students through the correct way to have an interaction with another person by being a role model.  I like to use open discussion or small discussion groups in many of my lessons to give the students opportunities to have interactions with their diverse peers. I uses these discussions to encourage the spread of understanding of everyone's perspective. I also plan lessons to provide equitable learning opportunities. For lessons that require the use of computers or library research, can be difficult fo some students that do not have access to computers or Internet at home. My lessons that require the use of computers or library research, I will provided the students access to computers or the school library. I was able to use laptop computers to provide all my students with Internet access for computer based assignments. I also encourage all interested students to pursue careers in STEM fields. As part of the lessons for my high school physics classes, I would include positive role models from stem fields that have a diverse background, for example I would mention Maria Curie's research on radioactivity during lessons on radioactive decay. Also to encourage interest into STEM fields, I would have open discussion about career opportunities outside of academia. Teaching students about career opportunities in the private sector, research and development, and safety allowed the students to gain interest in STEM fields outside of teaching. 
+\paragraph{}The biggest issue I have had with being an advocate for diversity and inclusion is my lack of diversity, and therefore my lack of understanding. This has made me want to become better at providing an equitable and inclusive atmosphere. In order to grow my understanding of diversity and inclusion, I have tried to attend as many learning opportunities as I can. I have been able to attend discussion panels hosted by staff and students at the lab that have focused on diversity an inclusion. These have allowed me to learn from students, staff, and post docs about the difficulties of their journey. I attended the DNP/JPS program on Women in Physics at the American Physical Society division of nuclear physics conference in 2018. I was able to attend a diversity and inclusion lecture at a local workshop for post docs. and graduate students. This lecture focused on systemic racism. I learned about examples of systemic racism in society and discussed ideas of how to combat it. These opportunities have helped me grow my understanding in difficulties and success for many diverse people that come from many diverse backgrounds. I plan to continue learning about how to embrace inclusiveness, equity, and become globally aware of all issues that cause difficulties for diverse individuals. 
+
+
+\end{document}

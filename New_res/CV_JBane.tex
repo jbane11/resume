@@ -1,0 +1,331 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[12pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{}
+\chead{}
+\rhead{}
+\rfoot{\thepage/ \pageref{LastPage}}
+\lfoot{Jason Bane}
+\cfoot{jbane@jlab.org}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+
+\begin{document}
+\iffalse	
+	\vspace*{-1.2cm}
+	{\textbf{Jason Bane}}\\
+	18 Morrison Ave. \\
+	Newport News, VA 23601 \\
+	(931) 239-0611 \\
+	jbane@jlab.org \\
+	\today\\
+	
+	Hello, 
+	
+	\paragraph{}I am a Ph.D. student at the University of Tennessee with plans to defend late this fall and have been completing my research at the Thomas Jefferson National Accelerator Facility (Jefferson Lab) in Newport News, VA. Completing my research here at the Lab for the last 5 years has allowed me gain an immense amount of experience with detector systems, data acquisition systems, and data analysis. My time at the lab has been devoted to honing my skills and knowledge in the complete process of being an experimental physicist. Working with the three electron scattering experiments has allowed me to experience constructing spectrometers, refurbishing detectors, building electrical systems for data acquisition, and data analysis including monte carlo simulations and the processing of large data sets.  
+	\paragraph{}My work at Jefferson Lab has allowed me to work on many aspects of an experiment. I was able to work on the refurbishment and maintenance of a large acceptance electron spectrometer for a tritium experiment. Preparing this spectrometer gave me the opportunity to gain experience in the design and construction of the front end electronics. This included designing and testing of a logic trigger built with analog and digital electronics. I refurbished individual detectors, by testing and replacing photomultiplier tubes and scintillating plastics.  
+	I also prepared parts of the analysis software and completed analysis for three different experiments by helping maintain the online analysis software and data decoding scripts. I calibrated parts of the detectors, focusing on the beam position monitors and analog to digital converter signals from the Cherenkov and calorimeters. As part of my Ph.D., I have been analyzing electron scattering data. Part of my analysis task has been to compare data results to simulated data. In order to simulate data, I have had to work closely with cross-section models and monte carlo simulation packages. Completing this analysis has granted me the ability to learn different coding languages like \CPP, Fortran, ROOT, and python and working with SQL databases   
+	
+	\paragraph{}The knowledge and skills I have gained working at Jefferson Lab would make me a great fit to work as a Proton System Commissioning Physicist. My experience with radiation detection systems and data analysis would allow me to deploy and support the operation of the SC360, including analyzing data to improve, maintain, and troubleshoot problems that may arise. 
+	\\
+	
+	\noindent Thank you for your time and attention,\\
+	\noindent Jason Bane
+
+
+%\include{cover_letter_IU}
+\newpage
+\fi
+\begin{center}
+{\LARGE \textbf{Jason Bane}}
+
+18 Morrison Ave.\ \ \textbullet
+\ \ Newport News, VA 23601 \\
+(931) 239-0611\ \ \textbullet
+\ \ jbane@jlab.org
+\end{center}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Education}
+
+\begin{itemize}
+	\parskip=0.1em
+	
+	\item 
+	\headerrow
+	{\textbf{University of Tennessee}}
+	{\textbf{Knoxville, TN}}
+	
+	\headerrow
+	{\emph{Ph.D. in Nuclear Physics}}
+	{\emph{August 2012 -- December 2019}}
+		\headerrow
+	{\emph{Thesis: The EMC Effect in A=3 Nuclei}}
+	{\emph{Advisor: Nadia Fomin}}
+	%	\begin{itemize*}
+	%		\item Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+	%		\item Mirum est notare quam littera gothica, quam nunc putamus parum
+	%		claram.
+	%	\end{itemize*}
+	
+	
+	\parskip=0.1em
+	
+	\item 
+	\headerrow
+	{\textbf{University of Tennessee}}
+	{\textbf{Knoxville, TN}}
+	\\
+	\headerrow
+	{\emph{Secondary Education Certification in Math and Science}}
+	{\emph{August 2009 -- May 2010}}
+	%	\begin{itemize*}
+	%		\item Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+	%		\item Mirum est notare quam littera gothica, quam nunc putamus parum
+	%		claram.
+	%	\end{itemize*}
+	
+	
+	\parskip=0.1em
+	
+	\item 
+	\headerrow
+	{\textbf{University of Tennessee}}
+	{\textbf{Knoxville, TN}}
+	\\
+	\headerrow
+	{\emph{Bachelor of Science, Physics \& Minor in Education }}
+	{\emph{August 2004 -- May 2009}}
+	
+	%	\begin{itemize*}
+	%		\item Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+	%		\item Mirum est notare quam littera gothica, quam nunc putamus parum
+	%		claram.
+	%	\end{itemize*}
+	
+\end{itemize}
+\hrule
+\subsection*{Honors}
+\begin{itemize}
+	\item Jefferson Science Associates graduate fellowship award (2018)  
+	\item Chancellor’s honors for extraordinary professional promise (2016) 
+	\item DOE Office of Science Graduate Student Research program award (2015)
+	\item Dean's List 2009 Academic Year (2010)
+\end{itemize}
+
+
+\hrule
+\vspace{0.4em}
+\subsection*{Teaching Experience}
+
+\begin{itemize}
+	\parskip=0.1em
+	\begin{samepage}
+	\item
+	\headerrow
+	{\textbf{University of Tennessee, Department of Physics and Astronomy }}
+	{\textbf{  Knoxville, TN,}}
+	\\
+	\headerrow
+	{\emph{Graduate Teaching Assistant }}
+	{\emph{August 2012 -- May 2015}}
+	\begin{itemize}
+		\item Designed and implemented observational and planetarium based astronomy labs.
+		\item Educated students on the use of refracting telescopes and equatorial mounts.
+		\item Instructed students in laboratory exercises to help conceptualize physics topics.
+		\item Tutored students for homework assistance and test prep.
+	\end{itemize}
+\end{samepage}
+\vspace{0.25cm}
+\begin{samepage}
+	\item
+	\headerrow
+	{\textbf{Clay County Tennessee Education Department}}
+	{\textbf{Celina, TN}}
+	\\
+	\headerrow
+	{\emph{Secondary Educator \& Football Coach}}
+	{\emph{August 2010 -- May 2012 }}
+	\begin{itemize}
+		\item Created lesson plans that included interactive, creative thinking, and discussion driven curriculum for a diverse body of geometry students.
+		\item Constructed lessons that used hands-on lab activities, demonstrations, and interactive computer lessons to instruct high school Juniors and Seniors in algebra-based physics. 
+		\item Used discussion-based problem-solving lessons to help remedial math students to improve their algebra, geometry and trigonometry skills for post-secondary education. 
+		\item Provided an equitable and inclusive atmosphere for diverse students.
+		\item Guided student athletes through drills that focused on using the proper techniques to keep them safe
+		\item Tutored students in math focusing on problem solving skills. 
+	\end{itemize}
+\end{samepage}
+\end{itemize}
+
+
+\vspace{0.4em}
+\subsection*{Research Experience}
+
+\begin{itemize}
+	\item
+	\headerrow
+		{\textbf{University of Tennessee, Department of Physics and Astronomy }}
+		{\textbf{  Knoxville, TN,}}
+	\\
+	\headerrow
+		{\emph{Graduate Research Assistant }}
+		{\emph{May 2014 -- Present}}
+	\begin{itemize}
+		\item Extracted complete inclusive cross sections for the MARATHON data set
+		\item Analyzed a large set of data involving multiple nuclear targets and Monte Carlo simulations using Python, C++ , ROOT, and Fortran.
+		\item Lead in developing software designed to promote the collaborative use of a SQL database. 
+		\item Lead an effort to investigate and repair faulty beam line detectors.
+		\item Coordinated the productive and efficient use of beam time through planning and communication between experimentalists, staff, and technicians.
+%		\item Designed and constructed front end electronics for an electron spectrometer.
+		\item Maintained and refurbished detector components (PMTs, scintillators...) 
+		\item Calibrated detectors to control data quality and assessed the detectors' performance.
+		\item Created module layouts and cable maps for efficient reuse of signal components.
+		\item Collaborated with a diverse group of scientists, leading projects, working as a team member, and mentoring other students in analysis software and techniques.
+	\end{itemize}
+	%\vspace{0.85cm}
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Core Technical Skills}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[Hardware:]
+	Detector maintenance and wiring, front end electronics design and implementation, logical trigger design and testing   
+	\item[Languages:]
+	C, \CPP, \LaTeX, Python, shell script, SQL \\
+	Monte Carlo Simulation Packages\\
+	Example scripts located at https://github.com/jbane11/examples
+	\item[Software:]
+	Microsoft Office, Libre Office, Texstudio, vim, atom
+	\item[Operating Systems:]
+	Linux(Red Hat), Windows, MacOS
+	
+\end{description*}
+\end{indentsection}
+\hrule
+\subsection*{Publications}
+\begin{itemize} \itemsep -2pt % Reduce space between items
+	\item   M. Murphy, [et al. including \textbf{J. Bane}], "Measurement of the cross sections for inclusive electron scattering in the E12-14-012 experiment at Jefferson Lab," Phys. Rev. C 100, 054606 (2019)
+	\item  H. Dai, [et al. including \textbf{J. Bane}], ``First Measurement of the Ar(e,$e^\prime$)X Cross Section at Jefferson Lab," Phys. Rev. C 99, 054608 May 2019
+	\item R. Cruz-Torres, [et al. including \textbf{J. Bane}], ``Comparing proton momentum distributions in A=3 nuclei via $^3$He and $^3H$(e,$e^\prime$p) measurements," Physics Letters B 797 (2019) 134890
+	\item S. N. Santiesteban, S. Alsalmi, D. Meekins, \textbf{J. Bane,} et al., ``Density Changes in Low Pressure Gas Targets for Electron Scattering Experiments" NIM A 940, 2019
+	\item  H. Dai, [et al. including \textbf{J. Bane}], ``First Measurement of the Ti(e,$e^\prime$)X Cross Section at Jefferson Lab," Phys. Rev. C 98, 014617 July 2018
+	\item P V. Pandey, [et al. including \textbf{J. Bane}], ``Probing electron-argon scattering for liquid-argon based neutrino-oscillation program," preprint arXiv:1711.01671
+	
+\end{itemize}
+\hrule
+
+\subsection*{Conference Presentations and Posters}
+\begin{itemize*}
+	\item F$_2$ ratio and EMC effect for A=3 Mirror Nuclei", 24th European Conference on Few-body Problems in Physics, University of Surrey, England, September 2019.
+	\item "EMC in A=3 from MARATHON," 2nd Workshop on Quantitative Challenges in SRC and EMC Research,  MIT, Cambridge MA,  March 2019
+	\item "Ratios in A=3 nuclei from MARATHON ," American Physical Society's Division of Nuclear Physics' yearly meeting, HA, October 2018
+	\item "Measurement of the spectral function of Argon and Titanium through the(e,$e^\prime$p) reaction," American Physical Society's Division of Nuclear Physics' yearly meeting, HA, October 2018
+	\item "Status of the MARATHON experiment." American Physical Society's Division of Nuclear Physics' yearly meeting, Pittsburgh PA, October 2017
+	\item "Searching for the Origin of the EMC effect." American Physical Society's Division of Nuclear Physics' yearly meeting, Sante Fe NM, October 2016
+%\end{itemize*}
+
+%\hrule
+%\subsection*{Poster Presentations}
+%\begin{itemize*}
+	\item "The impetus in the EMC effect, a EMC simulation." Gordon Research Conferences, Holderness, NH. August 2018 
+	\item "Searching for the Origin of the EMC effect." SURA Board of Trustees Meeting, Newport News, VA. April 2018 
+\end{itemize*}
+
+\hrule
+\subsection*{References}
+\begin{multicols}{2}
+	{\noindent\bf{Nadia Fomin}}, Professor\\
+	Department of Physics and Astronomy\\ 
+	University of Tennessee at Knoxville\\
+	(865) 974-1509, nfomin@utk.edu\\
+	\columnbreak
+	
+	{\noindent\bf{Cynthia Keppel}}, Hall A and C Leader\\
+	Thomas Jefferson National Accelerator Facility\\
+	(757) 584-7580, keppel@jlab.org\\
+\end{multicols}
+\begin{multicols}{2}
+	{\noindent\bf{Douglas Higinbotham}}, Staff Scientist\\
+	Thomas Jefferson National Accelerator Facility\\
+	(757) 584-7851, doug@jlab.org\\
+	\columnbreak
+	
+	{\noindent\bf{Evan McClellan}}, Assistant Professor of Physics\\ Pensacola State College \\
+	vanlellan@gmail.com\\
+
+
+
+%	\columnbreak
+		
+
+	%{\noindent\bf{Evan McClellan}}, Post-doctoral Fellow\\
+	%Jefferson Lab Accelerator Facility\\
+	%randallm@jlab.org\\
+	
+\end{multicols}
+
+\iffalse
+\hrule
+
+\subsection*{Interests}
+
+	Football, coaching, programming, boating, traveling,
+\fi
+\end{document}
+
+
+
+%	{\bf{Mellisa White}}, Teacher, Principal\\
+%Clay County Board of Education\\
+%millicentfiske@gmail.com\\	
+

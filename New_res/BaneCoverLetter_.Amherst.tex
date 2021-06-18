@@ -1,0 +1,83 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{}
+\chead{}
+\rhead{}
+\rfoot{\thepage/ \pageref{LastPage}}
+\lfoot{Jason Bane}
+\cfoot{jbane@jlab.org}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+		{\setlength{\leftmargin}{#1}}%
+		\item[]%
+	}
+	{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+		{\setlength{\leftmargin}{-0.5#1}}%
+		\item[]%
+	}
+	{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+		#1 &
+		#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\vspace*{-1.2cm}
+{\textbf{Jason Bane}}\\
+18 Morrison Ave. \\
+Newport News, VA 23601 \\
+(931) 239-0611 \\
+jbane@jlab.org \\
+\today\\
+
+Dear Hiring Manager, 
+
+\paragraph{}I write to apply for the post doctoral research associate position at UMass, Amherst. I have recent successfully defended my dissertation "The EMC Effect in A=3 Nuclei" under the direction of Nadia Fomin, at the University of Tennessee.
+
+
+
+I am writing to exa Ph.D. student at the University of Tennessee and have successfully defended my dissertation. I completed my research at the Thomas Jefferson National Lab in Newport News, VA. I have gain an immense amount of experience with detector systems, data acquisition systems, and data analysis. My time at the lab has been devoted to honing my skills and knowledge in the complete process of being an experimental physicist. Working with the three electron scattering experiments has allowed me to experience constructing spectrometers, refurbishing detectors, building electrical systems for data acquisition, and data analysis including monte carlo simulations and the processing of large data sets.  
+\paragraph{}My work at Jefferson Lab has allowed me to work on many aspects of an experiment. I was able to work on the refurbishment and maintenance of a large acceptance electron spectrometer for a tritium experiment. Preparing this spectrometer gave me the opportunity to gain experience in the design and construction of the front end electronics. This included designing and testing of a logic trigger built with analog and digital electronics. I refurbished individual detectors, by testing and replacing photomultiplier tubes and scintillating plastics.  I assisted in the assembly and testing of the data acquisition system.
+I also prepared part of the analysis software and completed analysis for three different experiments by helping maintain the online analysis software and data decoding scripts. I calibrated parts of the detectors, focusing on the beam position monitors and analog to digital converter signals from the Cherenkov and calorimeters. As part of my Ph.D., I have been analyzing electron scattering data. Part of my analysis task has been to compare data results to simulated data. In order to simulate data, I have had to work closely with cross-section models and monte carlo simulation packages. Completing this analysis has granted me the ability to learn different coding languages like \CPP, fortran, ROOT, and python.
+
+\paragraph{}The knowledge and skills I have gained working at Jefferson Lab would make me a great fit to join your PET physics group as a Post-Doc Research Scientist. This work improved my communication skills by working with large collaborations and making presentations to the scientific community. Completing electron scattering experiments has honed my skills in organization and my ability to analyze the details. Completing my Ph.D. in nuclear physics has forced me to grow and overcome obstacles in new and creative ways.
+\\
+
+\noindent Thank you for your time and attention,\\
+\noindent Jason Bane
+
+
+
+
+\end{document}
+
